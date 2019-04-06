@@ -1,18 +1,4 @@
 <?php
-//--only when in development
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
-
-// $numbers = array(7,9,8,9,8,8,6);
-
-// function printArr($array){
-
-//     foreach ($array as $item)
-//         {
-//             echo '<p>' . $item . ' </p><br>';
-//         }
-// }
 
 require 'functions.php';
 
