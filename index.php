@@ -1,20 +1,20 @@
 <?php
 //--only when in development
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
-$numbers = array(7,9,8,9,8,8,6);
+// $numbers = array(7,9,8,9,8,8,6);
 
-function printArr($array){
+// function printArr($array){
 
-    foreach ($array as $item)
-        {
-            echo '<p>' . $item . ' </p><br>';
-        }
-}
+//     foreach ($array as $item)
+//         {
+//             echo '<p>' . $item . ' </p><br>';
+//         }
+// }
 
-
+require 'functions.php';
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +26,14 @@ function printArr($array){
 </head>
 <body>
 <header>Pair Programming 1</header>
-<div><?php printArr($numbers) ?></div>
+<div>   <?php
+            printArr($numbers);
+            largest($numbers);
+            average($numbers);
+            removeDups($numbers);
+            distribution($numbers);
+        ?>
+    </div>
 
 </body>
 </html>
