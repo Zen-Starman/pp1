@@ -15,8 +15,8 @@ function printArr($array){
 }
 
 function largest($array){
-
-
+    $max = max($array);
+    echo '<p>' . $max . '</p><br>';
 }
 
 function average($array){
@@ -33,7 +33,8 @@ function average($array){
 }
 
 function removeDups($array){
-
+    $uniArray = array_unique($array);
+    printArr($uniArray);
 }
 
 function distribution($arrayA){
@@ -52,7 +53,7 @@ function distribution($arrayA){
             $dupArray[$num] = 1;
         }
     }
-
-    print_r(distribution($dupArray));
-    
+    echo '<p>';
+        print_r($dupArray);
+    echo '</p>';
 }
